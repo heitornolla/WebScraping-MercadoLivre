@@ -64,6 +64,7 @@ Run the script.py file and have fun!
 ## Technologies Used
 
 Python 3.12.1
+
 Scrapy for the Web Scraping
 
 Pandas for Data Transformation
