@@ -65,5 +65,7 @@ Run the script.py file and have fun!
 
 Python 3.12.1
 Scrapy for the Web Scraping
+
 Pandas for Data Transformation
+
 Streamlit for the dashboard
