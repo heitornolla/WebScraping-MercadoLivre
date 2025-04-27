@@ -60,6 +60,8 @@ pip install -r requirements.txt
 ### 6. Run the Project!
 
 Run the script.py file and have fun!
+If you obtain any errors, delete or rename the files on the _data_ folder
+
 
 ## Technologies Used
 
