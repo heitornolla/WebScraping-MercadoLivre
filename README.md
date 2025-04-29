@@ -12,7 +12,10 @@ If you'd like to scrape data for a different item, just update the start_urls at
 ```bash
 extraction/spiders/mercadolivre.py
 ```
+
+### Dashboard
 The dashboard currently looks like this:
+
 !['Screenshot of the dashboard'](assets/screenshot.png)
 
 I will add more analysis to the dashboard as the project grows.
