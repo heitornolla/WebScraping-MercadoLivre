@@ -1,4 +1,6 @@
 import scrapy
+from scrapy.crawler import CrawlerProcess
+from scrapy.utils.project import get_project_settings
 
 class MercadoLivreSpider(scrapy.Spider):
     name = "mercadolivre"
@@ -28,3 +30,17 @@ class MercadoLivreSpider(scrapy.Spider):
             if next_page:
                 self.page_count += 1
                 yield scrapy.Request(url=next_page, callback=self.parse)
+
+
+    def run_spider():
+        process = CrawlerProcess(settings={
+            **get_project_settings(),
+            "FEEDS": {
+                "../../data/data.json": {
+                    "format": "json",
+                    "overwrite": True,
+                }
+            }
+        })
+        process.crawl(MercadoLivreSpider)
+        process.start()

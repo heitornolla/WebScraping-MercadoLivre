@@ -50,7 +50,7 @@ def price_to_float(df: pd.DataFrame) -> pd.DataFrame:
 
 def save_to_sqlite3(df: pd.DataFrame) -> pd.DataFrame:
   try:
-    conn = sqlite3.connect('../data/database.db')
+    conn = sqlite3.connect('data/database.db')
     df.to_sql('mercadolivre_items', conn, if_exists='replace', index=False)
 
   except:

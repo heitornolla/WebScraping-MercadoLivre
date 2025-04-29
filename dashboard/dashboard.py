@@ -33,5 +33,5 @@ def get_dashboard(df: pd.DataFrame):
 
 
 if __name__ == "__main__":
-  df = get_df_from_db('../data/database.db')
+  df = get_df_from_db('data/database.db')
   get_dashboard(df)
