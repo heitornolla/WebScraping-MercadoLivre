@@ -10,8 +10,10 @@ This project leverages Python's **Scrapy** library to perform web scraping on Me
 If you'd like to scrape data for a different item, just update the start_urls attribute located at:
 
 ```bash
-extraction/extraction/spiders/mercadolivre.py
+extraction/spiders/mercadolivre.py
 ```
+The dashboard currently looks like this:
+!['Screenshot of the dashboard'](assets/screenshot.png)
 
 ## How to Install and Run the project
 
@@ -60,8 +62,6 @@ pip install -r requirements.txt
 ### 6. Run the Project!
 
 Run the script.py file and have fun!
-If you obtain any errors, delete or rename the files on the _data_ folder
-
 
 ## Technologies Used
 
