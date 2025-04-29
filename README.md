@@ -15,6 +15,8 @@ extraction/spiders/mercadolivre.py
 The dashboard currently looks like this:
 !['Screenshot of the dashboard'](assets/screenshot.png)
 
+I will add more analysis to the dashboard as the project grows.
+
 ## How to Install and Run the project
 
 It is my personal recommendation that you make a new virtual Python environment for every project you run. To do so, open your preferred terminal and run the commands:
