@@ -1,4 +1,4 @@
-# mercadolivre-scraping
+# Web Scraping Mercado Livre
 
 **Disclaimer:**
 _This is a personal project intended for educational purposes only_
