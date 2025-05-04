@@ -7,10 +7,41 @@ _This is a personal project intended for educational purposes only_
 
 This project leverages Python's **Scrapy** library to perform web scraping on Mercado Livre, specifically collecting information about **5-string bass guitars**
 
-If you'd like to scrape data for a different item, just update the start_urls attribute located at:
+## Adapting for other items
+
+If you'd like to scrape data for a different item, it is totally possible!
+
+### 1. Go to the file located in
 
 ```bash
 extraction/spiders/mercadolivre.py
+```
+
+### 2. Update the start url
+
+Set it to the item you wish to scrape
+If you wish to scrape prices for Acer notebooks, the url would be
+
+```bash
+https://lista.mercadolivre.com.br/notebook-acer
+```
+
+### 3. Update the parse function
+
+Click the "Next Page" button and observe the new URL. It should look like
+
+```bash
+https://lista.mercadolivre.com.br/informatica/portateis-acessorios/notebooks/acer/notebook-acer_Desde_49_NoIndex_True
+```
+
+Set this url as the _next page_ attribute in the MercadoLivreSpider class, but change _49_ to {offset}
+
+This will ensure that the crawler moves through to the next pages
+
+In the end, the code for the _next page_ attribute should look like
+
+```bash
+next_page = f"https://lista.mercadolivre.com.br/instrumentos-musicais/instrumentos-corda/baixos/baixo-5-cordas_Desde_{offset}_NoIndex_True_STRINGS*NUMBER_5-5"
 ```
 
 ### Dashboard
