@@ -17,9 +17,6 @@ def main():
     MercadoLivreSpider.run_spider()
     transform_data('data/data.json')
 
-    # Streamlit apps must be run by calling streamlit run
-    # I havent yet found an elegant solution for this
-    os.system('streamlit run dashboard/dashboard.py')
 
 if __name__ == "__main__":
     main()

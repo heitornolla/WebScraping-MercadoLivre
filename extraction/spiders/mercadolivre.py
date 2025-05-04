@@ -1,6 +1,9 @@
+import os
 import scrapy
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
+
+save_path = os.path.join(os.getcwd(), 'data')
 
 class MercadoLivreSpider(scrapy.Spider):
     name = "mercadolivre"
@@ -9,6 +12,7 @@ class MercadoLivreSpider(scrapy.Spider):
 
     page_count = 1
     max_pages = 20
+
 
     def parse(self, response):
         products = response.css('div.ui-search-result__wrapper')
@@ -33,10 +37,11 @@ class MercadoLivreSpider(scrapy.Spider):
 
 
     def run_spider():
+        os.makedirs(save_path, exist_ok=True)
         process = CrawlerProcess(settings={
             **get_project_settings(),
             "FEEDS": {
-                "../../data/data.json": {
+                os.path.join(save_path, 'data.json'): {
                     "format": "json",
                     "overwrite": True,
                 }

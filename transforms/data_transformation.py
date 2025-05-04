@@ -4,8 +4,6 @@ import sqlite3
 from datetime import datetime
 import os
 
-pd.options.display.max_columns = None
-
 
 def read_data(path_to_data: str = ''):
   if path_to_data == '':
