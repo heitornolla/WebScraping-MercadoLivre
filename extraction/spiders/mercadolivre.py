@@ -30,7 +30,9 @@ class MercadoLivreSpider(scrapy.Spider):
             }
 
         if self.page_count < self.max_pages:
-            next_page = response.css('li.andes-pagination__button.andes-pagination__button--next a::attr(href)').get()
+            # 48 is the amount of items shown in a given page
+            offset = 48 * self.page_count
+            next_page = f"https://lista.mercadolivre.com.br/instrumentos-musicais/instrumentos-corda/baixos/baixo-5-cordas_Desde_{offset}_NoIndex_True_STRINGS*NUMBER_5-5"
             if next_page:
                 self.page_count += 1
                 yield scrapy.Request(url=next_page, callback=self.parse)
