@@ -26,7 +26,8 @@ I will add more analysis to the dashboard as the project grows
 ### With Docker
 
 I have refactored the project to offer Docker support
-Simply run
+
+You may install it with the following commands:
 
 ```bash
 docker build -t mlscrape .
