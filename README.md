@@ -38,6 +38,7 @@ docker run -p 8501:8501 mlscrape
 ```
 
 This will map your 8501 port to the one exposed on the Dockerfile
+
 You will be able to access the dashboard by navigating to localhost:8501
 
 ### With a local Python installation
@@ -103,4 +104,4 @@ Pandas for Data Transformation
 
 Streamlit for the dashboard
 
-Docker for deploys
+Docker for deploying
