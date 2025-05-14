@@ -50,7 +50,7 @@ The dashboard currently looks like this:
 
 !['Screenshot of the dashboard'](assets/screenshot.png)
 
-I will add more analysis to the dashboard as the project grows
+You may search through all items and apply filters
 
 ## How to Install and Run the project
 
