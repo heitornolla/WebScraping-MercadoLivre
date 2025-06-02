@@ -128,12 +128,4 @@ streamlit run dashboard/dashboard.py
 
 ## Technologies Used
 
-Python 3.12.1
-
-Scrapy for the Web Scraping
-
-Pandas for Data Transformation
-
-Streamlit for the dashboard
-
-Docker for deploying
+Python, Scrapy, Pandas, Streamlit and Docker
