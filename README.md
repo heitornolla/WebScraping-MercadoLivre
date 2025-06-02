@@ -119,6 +119,7 @@ pip install -r requirements.txt
 #### 6. Run the Project!
 
 Run the crawl.py file to crawl Mercado Livre
+
 To generate the dashboard based on your data, run
 
 ```bash
