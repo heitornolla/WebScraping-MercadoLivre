@@ -8,7 +8,7 @@ def main():
     # Check if data.json exists
     data_path = os.path.abspath('data/data.json')
 
-    if os.path.exists(data_path):      
+    if os.path.exists(data_path):
         timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
         new_name = f"data/data_{timestamp}.json"
         os.rename(data_path, new_name)
