@@ -1,7 +1,7 @@
 # Web Scraping Mercado Livre
 
 **Disclaimer:**
-_This is a personal project used for educational purposes only_
+_This is a personal project used for educational/didatic purposes only_
 
 ## Overview
 
