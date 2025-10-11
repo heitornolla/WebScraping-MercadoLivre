@@ -5,7 +5,7 @@ _This is a personal project used for educational/didatic purposes only_
 
 ## Overview
 
-This project leverages Python's **Scrapy** library to perform web scraping on Mercado Livre, specifically collecting information about **5-string bass guitars**
+This project leverages Python's **Scrapy** library to perform web scraping on Mercado Livre, specifically collecting information about **5-string bass guitars**.
 
 ## Adapting for other items
 
