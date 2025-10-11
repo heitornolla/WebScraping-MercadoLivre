@@ -126,6 +126,3 @@ To generate the dashboard based on your data, run
 streamlit run dashboard/dashboard.py
 ```
 
-## Technologies Used
-
-Python, Scrapy, Pandas, Streamlit and Docker
